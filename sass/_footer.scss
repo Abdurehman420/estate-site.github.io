@@ -1,0 +1,35 @@
+.footer {
+  //   grid-column: full-start / full-end;
+  grid-column: 1/ -1;
+  background-color: $color-secondary;
+
+  padding: 6rem 2rem;
+
+  &__listitems {
+    display: grid;
+    justify-items: center;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    list-style: none;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+
+    color: white;
+  }
+  &__item {
+    // padding: 1rem;
+    cursor: pointer;
+    &:hover {
+      transform: scale(1.1);
+      transition: all 300ms;
+    }
+  }
+  &__para {
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+    width: 60%;
+    margin: auto;
+    padding-top: 5rem;
+  }
+}

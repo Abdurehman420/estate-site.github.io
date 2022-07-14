@@ -1,0 +1,63 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 23rem;
+  z-index: 50000;
+  background-color: $color-primary-dark;
+  transform: translateX(-100%);
+  transition: transform 300ms;
+  &.open {
+    transform: translateX(0);
+  }
+
+  &__open {
+    height: 3.5rem;
+    width: 3.5rem;
+    position: fixed;
+    top: 2rem;
+    left: 2rem;
+    fill: black;
+    transition: all 399ms;
+  }
+  // &__open.show {
+  //   fill: ;
+  // }
+  &__open.blah {
+    fill: $color-grey-dark-1;
+  }
+  &__close {
+    fill: white;
+    height: 3rem;
+    width: 3rem;
+    position: fixed;
+    top: 2rem;
+    left: 18rem;
+  }
+  &__listitems {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    color: white;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+
+    a {
+      text-decoration: none;
+      color: white;
+    }
+  }
+  &__item {
+    // padding: 2rem 1rem;
+    margin: 1.4rem 1rem;
+
+    cursor: pointer;
+    &:hover {
+      color: black;
+      transition: color 300ms;
+    }
+  }
+}

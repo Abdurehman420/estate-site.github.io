@@ -1,0 +1,29 @@
+.features {
+  grid-column: 2 / -2;
+  // background-color: $color-primary-dark;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+  justify-items: center;
+  margin: 15rem 0;
+  gap: 6rem;
+  align-items: start;
+}
+.feature {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  column-gap: 2rem;
+
+  &__icon {
+    height: 4rem;
+    width: 4rem;
+    fill: $color-primary-dark;
+    grid-row: 1 / span 2;
+    transform: translateY(-1rem);
+  }
+
+  &__para {
+    font-size: 1.7rem;
+    margin-top: 1rem;
+  }
+}
